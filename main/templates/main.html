@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example of caching</title>
+</head>
+<body>
+<h2>Example of caching:</h2>
+<ul>
+    <li><a href="{% url 'template_fragment' %}">Caching fragment in template</a></li>
+    <li><a href="{% url 'memory' %}">Using memory backend for caching template context object</a></li>
+    <li><a href="{% url 'redis' %}">Using redis backend for caching template context object</a></li>
+    <li><a href="{% url 'simple' %}">Using caching of whole view response</a></li>
+    <li><a href="{% url 'model_cached' %}">Caching model data by django-cacheops</a></li>
+</ul>
+<hr>
+Generated {% now "jS F Y H:i:s" %}
+</body>
+</html>
